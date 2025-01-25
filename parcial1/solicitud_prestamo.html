@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Préstamos Estudiantiles</title>
+        <meta charset="utf-8"/> 
+
+    </head>
+    <body>
+        <h1>Solicitud de Préstamos Estudiantiles</h1>
+        <form action="solicitud_prestamo.html" method="get">
+            <label for="txtNombre">Nombre Completo</label>
+            <input type="text" name="nombre" id="txtNombre" placeholder="Nombre" required>
+            <br/>
+            <label for="txtEmail">Email</label>
+            <input type="email" name="email" id="txtEmail" placeholder="ejemplo@email.com" required>
+            <br/>
+            <label for="txtTelefono">Telefono</label>
+            <input type="text" name="telefono" id="txtTelefono" placeholder="13245679" maxlength="8" required>
+            <br/>
+            <label for="txtDireccion">Direccion Actual</label>
+            <input type="text" name="direccion" id="txtDireccion" placeholder="Direccion" required>
+            <br/>
+            <label for="txtCiudad">Ciudad</label>
+            <input type="text" name="ciudad" id="txtCiudad" placeholder="Ciudad" required>
+            <br/>
+            <label for="cmbEstado">Estado</label>
+            <select name="estado" id="cmbEstado" >
+                <option value="AT">Atlantida</option>
+                <option value="CH">Choluteca</option>
+                <option value="CL">Colon</option>
+                <option value="CM">Comayagua</option>
+                <option value="CP">Copan</option>
+                <option value="CR">Cortes</option>
+                <option value="EP">El Paraiso</option>
+                <option value="FM">Francisco Morazan</option>
+                <option value="GD">Gracias a Dios</option>
+                <option value="IN">Intibuca</option>
+                <option value="IB">Islas de la Bahia</option>
+                <option value="LP">La Paz</option>
+                <option value="LE">Lempira</option>
+                <option value="OC">Ocotepeque</option>
+                <option value="OL">Olancho</option>
+                <option value="SB">Santa Barbara</option>
+                <option value="VA">Valle</option>
+                <option value="YO">Yoro</option>
+            </select>
+            <br/>
+            <label for="txtCodigoPostal">Codigo Postal</label>
+            <input type="text" name="codigoPostal" id="txtCodigoPostal" maxlength="6">
+            <br/>
+            <label>Nivel de educacion actual: </label>
+            <input type="radio" id="opcPreparatoria" value="preparatoria" name="opcNivelEduc">
+            <label for="opcPreparatoria">&nbsp;Preparatoria</label>
+            <input type="radio" id="opcLicenciatura" value="Licenciatura" name="opcNivelEduc">
+            <label for="opcLicenciatura">&nbsp;Licenciatura</label>
+            <input type="radio" id="opcMaestría" value="Maestría" name="opcNivelEduc">
+            <label for="opcMaestría">&nbsp;Maestría</label>
+            <input type="radio" id="opcDoctorado" value="Doctorado" name="opcNivelEduc">
+            <label for="opcDoctorado">&nbsp;Doctorado</label>
+            <br/>
+
+            <label>Programa de estudio: </label>
+            <input type="radio" id="opcIngCC" value="Ciencias de la Computación" name="opcProgramEst" >
+            <label for="opcIngCC">&nbsp;Ciencias de la Computación</label>
+            <input type="radio" id="opcIngeniería" value="Ingeniería" name="opcProgramEst">
+            <label for="opcIngeniería">&nbsp;Ingeniería</label>
+            <input type="radio" id="opcEconomía" value="Economía" name="opcProgramEst">
+            <label for="opcEconomía">&nbsp;Economía</label>
+            <input type="radio" id="opcArtes" value="Artes" name="opcProgramEst">
+            <label for="opcArtes">&nbsp;Artes</label>
+            <input type="radio" id="opcOtro" value="Otro" name="opcProgramEst">
+            <label for="opcOtro">&nbsp;Otro</label>
+            <br/>
+
+            <label for="txtMonto">Monto de prestamo solicitado</label>
+            <input type="text" name="monto" id="txtMonto" placeholder="L." required>
+            <br/>
+            <label for="txtRazon">Razon para solicitar el prestamo</label>
+            <textarea name="razon" id="txtRazon" placeholder="Escriba la razon por la que solicita el prestamo" required
+            ></textarea>
+            <br/>
+            <button type="submit" name="btnEnviar" value="Btn1">Enviar Solicitud</button>
+            
+        </form>
+    </body>
+</html>

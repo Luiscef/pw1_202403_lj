@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tablas en HTML</title>
+        <meta charset="utf-8"/> 
+
+    </head>
+    <body>
+        <h1>Tablas en HTML</h1>
+        <p>
+            tr = table row, celdas
+            th = table header, columnas
+            td = table dat 
+        </p>
+        <table border="1">
+            <tr>
+                <th>Col 1</th>
+                <th>Col 2</th>
+                <th>Col 3</th>
+                <th>Col 4</th>
+
+            </tr>
+            <tr>
+                <td>Dato 1.1</td>
+                <td>Dato 1.2</td>
+                <td>Dato 1.3</td>
+                <td>Dato 1.4</td>
+            </tr>
+            <tr>
+                <td>Dato 2.1</td>
+                <td>Dato 2.2</td>
+                <td>Dato 2.3</td>
+                <td>Dato 2.4</td>
+            </tr>
+        </table>
+
+        <p>
+            thead = encabezado de la tabla
+        </p>
+
+        <table border = "1">
+            <thead>
+                <tr>
+                    <th colspan="5" >
+                        <h3>Tabla de Informacion de representantes por ciudad</h3>
+                    </th>
+                </tr>
+                <tr>
+                    <th>Pais</th>
+                    <th>Ciudad</th>
+                    <th>Id</th>
+                    <th>Nombre</th>
+                    <th>Correo</th>
+                </tr> 
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="3">HND</td>
+                    <td rowspan="2">TEG</td>
+                    <td>0001</td>
+                    <td>Hugo</td>
+                    <td>hugo@demo.com</td>
+                </tr>
+                <tr>
+                    <td>0002</td>
+                    <td>Juan</td>
+                    <td>juan@demo.com</td>
+                </tr>
+                <tr>
+                    <td>SPS</td>
+                    <td>0003</td>
+                    <td>Pedro</td>
+                    <td>pedro@demo.com</td>
+                </tr>
+                <tr>
+                    <td>SLV</td>
+                    <td>SSV</td>
+                    <td>0004</td>
+                    <td>Jose</td>
+                    <td>jose@demo.com</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <td colspan="5">Origen de datos extraidos de ABC en 2024</td>
+            </tfoot>
+        </table>
+
+    </body>
+</html>
